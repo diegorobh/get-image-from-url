@@ -12,15 +12,15 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="82" id="KGk-i7-Jjw" customClass="TitleSectionDetailMessageCell" customModule="Summary" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="357" height="82"/>
+        <tableViewCell contentMode="scaleToFill" restorationIdentifier="_TitleSectionDetailMessageCell" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="TitleSectionDetailMessageCell" customModule="Summary" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="357" height="206"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
-                <rect key="frame" x="0.0" y="0.0" width="357" height="81.5"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="357" height="205.5"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="4cf-ZD-dNH">
-                        <rect key="frame" x="0.0" y="0.0" width="357" height="52.5"/>
+                        <rect key="frame" x="0.0" y="0.0" width="357" height="50"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Hp4-BQ-8nI" userLabel="_separator">
                                 <rect key="frame" x="0.0" y="0.0" width="357" height="1"/>
@@ -30,28 +30,24 @@
                                 </constraints>
                             </view>
                             <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hBh-KF-TUD">
-                                <rect key="frame" x="10" y="16" width="337" height="20.5"/>
+                                <rect key="frame" x="10" y="16" width="337" height="18"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Quote Details" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gxq-UL-yQ1">
-                                        <rect key="frame" x="0.0" y="0.0" width="317" height="20.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="317" height="18"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_arrow_next" translatesAutoresizingMaskIntoConstraints="NO" id="ePB-ZW-Vro">
-                                        <rect key="frame" x="317" y="0.5" width="20" height="20"/>
+                                        <rect key="frame" x="317" y="0.0" width="20" height="18"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="20" id="MNK-0Y-dNn"/>
-                                            <constraint firstAttribute="height" constant="20" id="bW3-Ju-Mn4"/>
                                         </constraints>
                                     </imageView>
                                 </subviews>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="44" id="8ff-HN-qUK"/>
-                                </constraints>
                             </stackView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6pT-Uw-yHC" userLabel="_separator">
-                                <rect key="frame" x="0.0" y="51.5" width="357" height="1"/>
+                                <rect key="frame" x="0.0" y="49" width="357" height="1"/>
                                 <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="1" id="JJ1-GP-kjp"/>
@@ -60,6 +56,7 @@
                         </subviews>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="6pT-Uw-yHC" secondAttribute="trailing" id="97S-bJ-bDS"/>
+                            <constraint firstAttribute="height" constant="50" id="A6z-f5-3jD"/>
                             <constraint firstItem="Hp4-BQ-8nI" firstAttribute="leading" secondItem="4cf-ZD-dNH" secondAttribute="leading" id="EC0-Cb-WJh"/>
                             <constraint firstItem="6pT-Uw-yHC" firstAttribute="leading" secondItem="4cf-ZD-dNH" secondAttribute="leading" id="Ee4-vM-XtY"/>
                             <constraint firstAttribute="trailing" secondItem="Hp4-BQ-8nI" secondAttribute="trailing" id="GBr-ef-5Pr"/>
@@ -79,7 +76,7 @@
             <connections>
                 <outlet property="arrowImage" destination="ePB-ZW-Vro" id="26m-TA-iPm"/>
             </connections>
-            <point key="canvasLocation" x="162.40000000000001" y="171.81409295352324"/>
+            <point key="canvasLocation" x="162.40000000000001" y="227.58620689655174"/>
         </tableViewCell>
     </objects>
     <resources>

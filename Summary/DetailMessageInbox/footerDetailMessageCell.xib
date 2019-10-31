@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" restorationIdentifier="_footerDetailMessageCell" selectionStyle="default" indentationWidth="10" rowHeight="135" id="KGk-i7-Jjw" customClass="footerDetailMessageCell" customModule="Summary" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="385" height="135"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="385" height="134.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="iN7-jO-EE7">
+                        <rect key="frame" x="10" y="10" width="365" height="96"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bqd-Vt-8Pf" customClass="rounded_button" customModule="Summary" customModuleProvider="target">
+                                <rect key="frame" x="107.5" y="0.0" width="150" height="44"/>
+                                <color key="backgroundColor" red="0.28627450980000002" green="0.61960784310000006" blue="0.35686274509999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="D2u-01-Ch2"/>
+                                    <constraint firstAttribute="width" constant="150" id="vhq-CL-GHS"/>
+                                </constraints>
+                                <state key="normal" title="Edit Payment">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="editPaymentAction:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="Ncb-KH-wmP"/>
+                                </connections>
+                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="Avu-Ei-k5a" userLabel="SV_ending_buttons">
+                                <rect key="frame" x="0.0" y="52" width="365" height="44"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KRl-g5-cOU">
+                                        <rect key="frame" x="0.0" y="0.0" width="182.5" height="44"/>
+                                        <state key="normal" title="Mark as Paid">
+                                            <color key="titleColor" red="0.28627450980000002" green="0.61960784310000006" blue="0.35686274509999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="markAsPaydAction:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="l21-uC-77g"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bsV-lM-avO" customClass="rounded_button" customModule="Summary" customModuleProvider="target">
+                                        <rect key="frame" x="182.5" y="0.0" width="182.5" height="44"/>
+                                        <color key="backgroundColor" red="0.28627450980000002" green="0.61960784310000006" blue="0.35686274509999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="Request Payment">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="requestPaymentAction:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="IxV-fA-gcb"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="cJX-90-cxY"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="Avu-Ei-k5a" firstAttribute="leading" secondItem="iN7-jO-EE7" secondAttribute="leading" id="MGH-Tn-bqM"/>
+                            <constraint firstAttribute="trailing" secondItem="Avu-Ei-k5a" secondAttribute="trailing" id="jLO-kd-qcx"/>
+                        </constraints>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="iN7-jO-EE7" secondAttribute="trailing" constant="10" id="0CM-eX-JXK"/>
+                    <constraint firstItem="iN7-jO-EE7" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="4zQ-mr-cQv"/>
+                    <constraint firstAttribute="bottom" secondItem="iN7-jO-EE7" secondAttribute="bottom" constant="10" id="DbI-0k-5f8"/>
+                    <constraint firstItem="iN7-jO-EE7" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="vfY-g1-fEq"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="containerDoubleButtons" destination="Avu-Ei-k5a" id="qX7-U6-faD"/>
+                <outlet property="editPaymentOutlet" destination="bqd-Vt-8Pf" id="y7K-wf-pca"/>
+            </connections>
+            <point key="canvasLocation" x="185" y="197"/>
+        </tableViewCell>
+    </objects>
+</document>
