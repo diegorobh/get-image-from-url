@@ -6,10 +6,21 @@
 //  Copyright © 2019 Wilman Rojas. All rights reserved.
 //
 
+struct orderDetails{
+    var nights = Int()
+    var cleaningFee = String()
+    var petFee = Int()
+    var lodgingTax = Int()
+    var refundableDamage = Int()
+    var firstPayment = Int()
+    var datePayment = "10/10/2010"
+    var total = Int()
+}
+
 struct sectionsMessagesData {
     var opened = Bool()
     var title = String()
-    var data = [String:Any]()
+    var data = [orderDetails]()
 }
 
 import UIKit
@@ -17,6 +28,9 @@ import UIKit
 class DetailMessage: UIViewController {
 
     @IBOutlet weak var tableDetails: UITableView!
+    var orderDetail = orderDetails()
+    var quoteDetails = sectionsMessagesData()
+    var paymentSchedule = sectionsMessagesData()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -34,6 +48,10 @@ class DetailMessage: UIViewController {
         let footerCellNib = UINib(nibName: "footerDetailMessageCell", bundle: nil)
         tableDetails.register(footerCellNib, forCellReuseIdentifier: "_footerDetailMessageCell")
 
+    }
+    
+    func initDemoData(){
+        
     }
     
 }
